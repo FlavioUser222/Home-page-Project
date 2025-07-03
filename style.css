@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 40px;
+    width: 95%;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #686868;
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.logo {
+    width: 85px;
+    height: 30px;
+}
+
+
+
+header a {
+    color: #686868;
+    font-family: "Epilogue", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+
+
+}
+
+.register {
+    border: 1px solid #686868;
+    padding: 13px 23px;
+    border-radius: 15px;
+}
+
+
+.box1 {
+    display: none;
+    width: 153px;
+    height: 160px;
+}
+
+
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    color: hsl(0, 0%, 8%);
+    font-size: 80px;
+    letter-spacing: -1.11px;
+    height: 161px;
+    line-height: 80px;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+.nav li:hover .box1 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box1 ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.box1 li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.box2 {
+    display: none;
+}
+
+
+.nav li:hover .box2 {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 280px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.box2 li {
+    display: flex;
+    gap: 15px;
+}
+
+
+.nav li:hover {
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.login a:hover {
+    color: black;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.navegation {
+    display: flex;
+    gap: 63px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 125px;
+    width: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    width: 100%;
+    height: 400px;
+    gap: 108px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 540px;
+    height: 400px;
+    gap: 51px;
+}
+
+
+.text-content button {
+    width: 100%;
+    max-width: 163px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-weight: 800px;
+    font-family: "Epilogue", sans-serif;
+    letter-spacing: -0.25px;
+    line-height: 28px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.imgs-above {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.img-content {
+    background-image: url('./images/image-hero-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 480px;
+    height: 640px;
+    margin-top: 100px;
+
+}
+
+.content button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #151515;
+}
+
+.menu {
+    display: none;
+}
+
+.menu-content {
+    display: none;
+}
+
+.menu:hover+.menu-content,
+.menu-content:hover {
+    display: block;
+}
+
+
+
+
+
+@media screen and (max-width:880px) {
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+
+    .text-content {
+        align-items: center;
+        gap: 0px;
+    }
+
+    .text {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        height: 42px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .nav,
+    .login {
+        display: none;
+    }
+
+    .fechar {
+        position: absolute;
+        right: 19px;
+        top: 25px;
+    }
+
+    .img-content {
+        width: 100%;
+        max-width: 375px;
+        height: 290px;
+        background-size: cover;
+        background-image: url('./images/image-hero-mobile.png');
+    }
+
+    .menu {
+        display: block;
+        background-image: url('./images/icon-menu.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 32px;
+        height: 18px;
+    }
+
+    .menu-content {
+        display: none;
+        background-color: #FFFFFF;
+        width: 240px;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+
+    .nav-resp {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 78px;
+        padding-left: 24px;
+    }
+
+    .login-resp a {
+        text-decoration: none;
+        width: 195px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-resp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+        margin-top: 32px;
+    }
+
+
+    .nav-resp li:hover .box1 {
+        display: block;
+    }
+
+    .nav-resp li:hover .box2 {
+        display: block;
+    }
+
+    .nav-resp li {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-content {
+        width: 100%;
+        height: 290px;
+        background-size: cover;
+        background-image: url('./images/image-hero-mobile.png');
+    }
+
+
+
+
+
+}
